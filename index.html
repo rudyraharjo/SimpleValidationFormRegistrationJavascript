@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membuat Form Validasi dengan Javascript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="login">
+		<form action="#" name="FormValidation" id="FormValidation" method="POST">
+			<div>
+				<label>Nama Lengkap:</label>
+				<input type="text" name="f_namalengkap" id="f_namalengkap" style="text-transform: capitalize" />
+            </div>
+            <div>
+                <label>Jenis kelamin:</label><br>
+                <div class="radioBtn">
+                    <input type="radio" name="f_jenkel" value="Pria">
+                    <label for="male">Pria</label>
+                    <input type="radio" name="f_jenkel" value="Perempuan">
+                    <label for="female">Perempuan</label>
+                </div>
+            </div>
+            <div>
+                <label>Hobi:</label><br>
+                <div class="radioBtn">
+                    <input type="checkbox" id="f_hobi[]" name="f_hobi[]" value="futsal">
+                    <label for="vehicle1"> Futsal</label><br>
+                    <input type="checkbox" id="f_hobi[]" name="f_hobi[]" value="berenang">
+                    <label for="vehicle2"> Berenang</label><br>
+                    <input type="checkbox" id="f_hobi[]" name="f_hobi[]" value="nonton">
+                    <label for="vehicle3"> Nonton</label><br>
+                </div>
+            </div>
+			<div>
+				<label>Email:</label>
+				<input type="email" name="f_email" id="f_email" />
+            </div>
+            <div>
+				<label>Telp:</label>
+				<input type="text" name="f_telp" id="f_telp" onkeypress="javascript:return isNumber(event)"/>
+            </div>
+            <div>
+				<label>Username:</label>
+				<input type="text" name="f_username" id="f_username" />
+			</div>
+			<div>
+				<label>Password:</label>
+				<input type="password" name="f_password" id="f_password" />
+            </div>
+            <br />
+			<div>
+                <input type="button" onclick="btnDaftar()" value="Daftar" class="tombol">
+                <input type="button" onclick="btnReset()" value="btnReset" class="tombol">
+			</div>
+		</form>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
